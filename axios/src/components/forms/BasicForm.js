@@ -7,10 +7,14 @@ function BasicForm() {
   const [allEntry, setAllEntry] = useState([]);
 
   const submitForm = (e) => {
-    e.preventDefault();
-    let newEntry = { email: email, password: password };
+    if (email && password) {
+      e.preventDefault();
+      let newEntry = { id: new Date().getTime().toString(), email, password };
 
-    setAllEntry([...allEntry, newEntry]);
+      setAllEntry([...allEntry, newEntry]);
+    } else {
+      alert("Please enter the details");
+    }
   };
 
   return (
@@ -44,7 +48,11 @@ function BasicForm() {
       </form>
       <div>
         {allEntry.map((entry) => {
-          return <h3>{entry.email} ,{entry.password}</h3>;
+          return (
+            <h3>
+              {entry.email} ,{entry.password}
+            </h3>
+          );
         })}
       </div>
     </div>
