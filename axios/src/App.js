@@ -2,6 +2,7 @@ import "./App.css";
 import Datafetching2 from "./components/Datafetching2";
 // import Datafetching from "./components/Datafetching";
 import BasicForm from "./components/forms/BasicForm";
+import Reducer from "./components/Reducer";
 import WindowSize from "./components/WindowSize";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       {/* <Datafetching /> */}
       {/* <Datafetching2 /> */}
       {/* <BasicForm /> */}
-      <WindowSize />
+      {/* <WindowSize /> */}
+      <Reducer />
     </div>
   );
 }

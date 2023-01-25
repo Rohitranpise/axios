@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import Icons from "./forms/Icons";
+import { FcFrame } from "react-icons/fc";
 
 function WindowSize() {
   const [windowWidth, setWindowWidth] = useState(window.screen.width);
@@ -14,7 +16,11 @@ function WindowSize() {
   });
   return (
     <div>
-      <h2>the actual size of the window is</h2>
+      <h2>
+        the actual size of the window is
+        <FcFrame />
+        <Icons />
+      </h2>
       <p>{windowWidth}</p>
     </div>
   );
