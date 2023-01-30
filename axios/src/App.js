@@ -1,4 +1,6 @@
 import "./App.css";
+import ContextA from "./components/ContextA";
+import ContextF from "./components/ContextF";
 import Datafetching2 from "./components/Datafetching2";
 // import Datafetching from "./components/Datafetching";
 import BasicForm from "./components/forms/BasicForm";
@@ -12,7 +14,9 @@ function App() {
       {/* <Datafetching2 /> */}
       {/* <BasicForm /> */}
       {/* <WindowSize /> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      <ContextA />
+      <ContextF />
     </div>
   );
 }
